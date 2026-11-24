@@ -1,0 +1,20 @@
+# ==========================================
+# 8-BIT BOOTH MULTIPLIER - TIMING CONSTRAINTS
+# Target: Basys 3 (Artix-7)
+# FPGA: xc7a35tcpg236-1
+# Clock: 50 MHz (20 ns)
+# ==========================================
+
+# Clock constraint
+create_clock -name clk -period 20.000 [get_ports clk]
+
+# Input delay constraints
+set_input_delay -clock clk -max 2.000 [get_ports {A[*] B[*]}]
+set_input_delay -clock clk -min 0.000 [get_ports {A[*] B[*]}]
+
+# Output delay constraints
+set_output_delay -clock clk -max 2.000 [get_ports {P[*]}]
+set_output_delay -clock clk -min 0.000 [get_ports {P[*]}]
+
+# Clock uncertainty
+set_clock_uncertainty 0.500 [get_clocks clk]
