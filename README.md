@@ -1,4 +1,4 @@
-# Design-of-Low-Power-8-bit-Multiplier-using-Booth-Multiplier-Architecture
+# Design of Low Power 8 bit Multiplier using Booth Multiplier Architecture
 
 
 # INTRODUCTION
