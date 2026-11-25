@@ -973,7 +973,7 @@ synthesis settings, implementation strategy, clock frequency and switching activ
 exact numbers can change when the design runs on a FPGA platform.
 
 
-# ==============SUMMARY================
+# ======SUMMARY======
 
 
 The analysis of the Booth multiplier shows that optimizing the architecture can improve design
